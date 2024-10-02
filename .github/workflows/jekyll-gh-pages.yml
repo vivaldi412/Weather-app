@@ -37,9 +37,6 @@ jobs:
           destination: ./_site
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
-      - name: Data base
-        with:
-          SUPA_BASE_KEY: ${{ secrets.SUPA_BASE_KEY }} 
 
   # Deployment job
   deploy:
@@ -49,6 +46,9 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
+      - name: Data base
+        with:
+          SUPA_BASE_KEY: ${{ secrets.SUPA_BASE_KEY }} 
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
