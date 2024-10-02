@@ -1,0 +1,282 @@
+{
+  "0": {
+    "day": {
+      "description": "Clear Day / Sunny",
+      "image": "clear-day.svg"
+    },
+    "night": {
+      "description": "Clear Night",
+      "image": "clear-night.svg"
+    }
+  },
+  "1": {
+    "day": {
+      "description": "Mainly Sunny",
+      "image": "clear-day.svg"
+    },
+    "night": {
+      "description": "Mainly Clear",
+      "image": "clear-night.svg"
+    }
+  },
+  "2": {
+    "day": {
+      "description": "Partly Cloudy",
+      "image": "partly-cloudy-day.svg"
+    },
+    "night": {
+      "description": "Partly Cloudy",
+      "image": "partly-cloudy-night.svg"
+    }
+  },
+  "3": {
+    "day": {
+      "description": "Cloudy",
+      "image": "partly-cloudy-day.svg"
+    },
+    "night": {
+      "description": "Cloudy",
+      "image": "partly-cloudy-night.svg"
+    }
+  },
+  "45": {
+    "day": {
+      "description": "Foggy",
+      "image": "fog-day.svg"
+    },
+    "night": {
+      "description": "Foggy",
+      "image": "fog-night.svg"
+    }
+  },
+  "48": {
+    "day": {
+      "description": "Rime Fog",
+      "image": "haze-day.svg"
+    },
+    "night": {
+      "description": "Rime Fog",
+      "image": "haze-night.svg"
+    }
+  },
+  "51": {
+    "day": {
+      "description": "Light Drizzle",
+      "image": "partly-cloudy-day-drizzle.svg"
+    },
+    "night": {
+      "description": "Light Drizzle",
+      "image": "partly-cloudy-night-drizzle.svg"
+    }
+  },
+  "53": {
+    "day": {
+      "description": "Drizzle",
+      "image": "overcast-day-drizzle.svg"
+    },
+    "night": {
+      "description": "Drizzle",
+      "image": "overcast-night-drizzle.svg"
+    }
+  },
+  "55": {
+    "day": {
+      "description": "Heavy Drizzle",
+      "image": "extreme-day-drizzle.svg"
+    },
+    "night": {
+      "description": "Heavy Drizzle",
+      "image": "extreme-night-drizzle.svg"
+    }
+  },
+  "56": {
+    "day": {
+      "description": "Light Freezing Drizzle",
+      "image": "overcast-day-sleet.svg"
+    },
+    "night": {
+      "description": "Light Freezing Drizzle",
+      "image": "overcast-night-sleet.svg"
+    }
+  },
+  "57": {
+    "day": {
+      "description": "Freezing Drizzle",
+      "image": "extreme-day-sleet.svg"
+    },
+    "night": {
+      "description": "Freezing Drizzle",
+      "image": "extreme-night-sleet.svg"
+    }
+  },
+  "61": {
+    "day": {
+      "description": "Light Rain",
+      "image": "drizzle.svg"
+    },
+    "night": {
+      "description": "Light Rain",
+      "image": "drizzle.svg"
+    }
+  },
+  "63": {
+    "day": {
+      "description": "Rain",
+      "image": "partly-cloudy-day-rain.svg"
+    },
+    "night": {
+      "description": "Rain",
+      "image": "partly-cloudy-night-rain.svg"
+    }
+  },
+  "65": {
+    "day": {
+      "description": "Heavy Rain",
+      "image": "thunderstorms-day-rain.svg"
+    },
+    "night": {
+      "description": "Heavy Rain",
+      "image": "thunderstorms-night-rain.svg"
+    }
+  },
+  "66": {
+    "day": {
+      "description": "Light Freezing Rain",
+      "image": "overcast-day-sleet.svg"
+    },
+    "night": {
+      "description": "Light Freezing Rain",
+      "image": "overcast-night-sleet.svg"
+    }
+  },
+  "67": {
+    "day": {
+      "description": "Freezing Rain",
+      "image": "extreme-day-sleet.svg"
+    },
+    "night": {
+      "description": "Freezing Rain",
+      "image": "extreme-night-sleet.svg"
+    }
+  },
+  "71": {
+    "day": {
+      "description": "Light Snow",
+      "image": "partly-cloudy-day-snow.svg"
+    },
+    "night": {
+      "description": "Light Snow",
+      "image": "partly-cloudy-night-snow.svg"
+    }
+  },
+  "73": {
+    "day": {
+      "description": "Snow",
+      "image": "overcast-day-snow.svg"
+    },
+    "night": {
+      "description": "Snow",
+      "image": "overcast-night-snow.svg"
+    }
+  },
+  "75": {
+    "day": {
+      "description": "Heavy Snow",
+      "image": "extreme-day-snow.svg"
+    },
+    "night": {
+      "description": "Heavy Snow",
+      "image": "extreme-night-snow.svg"
+    }
+  },
+  "77": {
+    "day": {
+      "description": "Snow Grains",
+      "image": "overcast-day-hail.svg"
+    },
+    "night": {
+      "description": "Snow Grains",
+      "image": "overcast-night-hail.svg"
+    }
+  },
+  "80": {
+    "day": {
+      "description": "Light Showers",
+      "image": "partly-cloudy-day-rain.svg"
+    },
+    "night": {
+      "description": "Light Showers",
+      "image": "partly-cloudy-night-rain.svg"
+    }
+  },
+  "81": {
+    "day": {
+      "description": "Showers",
+      "image": "overcast-day-rain.svg"
+    },
+    "night": {
+      "description": "Showers",
+      "image": "overcast-night-rain.svg"
+    }
+  },
+  "82": {
+    "day": {
+      "description": "Heavy Showers",
+      "image": "extreme-day-rain.svg"
+    },
+    "night": {
+      "description": "Heavy Showers",
+      "image": "extreme-night-rain.svg"
+    }
+  },
+  "85": {
+    "day": {
+      "description": "Light Snow Showers",
+      "image": "overcast-day-snow.svg"
+    },
+    "night": {
+      "description": "Light Snow Showers",
+      "image": "overcast-night-snow.svg"
+    }
+  },
+  "86": {
+    "day": {
+      "description": "Snow Showers",
+      "image": "extreme-day-snow.svg"
+    },
+    "night": {
+      "description": "Snow Showers",
+      "image": "extreme-night-snow.svg"
+    }
+  },
+  "95": {
+    "day": {
+      "description": "Thunderstorm",
+      "image": "thunderstorms-day.svg"
+    },
+    "night": {
+      "description": "Thunderstorm",
+      "image": "thunderstorms-night.svg"
+    }
+  },
+  "96": {
+    "day": {
+      "description": "Light Thunderstorms With Hail",
+      "image": "thunderstorms-day-overcast-rain.svg"
+    },
+    "night": {
+      "description": "Light Thunderstorms With Hail",
+      "image": "thunderstorms-night-overcast-rain.svg"
+    }
+  },
+  "99": {
+    "day": {
+      "description": "Thunderstorm With Hail",
+      "image": "thunderstorms-day-extreme-rain.svg"
+    },
+    "night": {
+      "description": "Thunderstorm With Hail",
+      "image": "thunderstorms-night-extreme-rain.svg"
+    }
+  }
+}
