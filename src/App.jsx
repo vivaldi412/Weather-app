@@ -11,7 +11,7 @@ export default function App() {
   const [ipLoc, setIpLoc] = React.useState(null)
 
   async function fetchLoc(error) {
-    const locApi = `https://ip-api.com/json/?fields=3727583`
+    const locApi = `https://ip-api.com/json/?fields=3727583/`
     axios.get(locApi)
       .then(response => setIpLoc(response))
       .catch(error => console.log(error))
