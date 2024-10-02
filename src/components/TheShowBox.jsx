@@ -6,11 +6,7 @@ import Hourly from "./Hourly";
 import Info from "./Info";
 
 import { WeatherContext } from "./WeatherContext";
-// import sun1 from "../assest/sun1.gif"
-// import sun2 from "../assest/sun2.gif"
-// import sun3 from "../assest/svg-icon/wi-day-sunny.svg";
-// import Sun from "../assest/svg-icon/wi-day-sunny.svg?react";
-import logo from "../assest/logo.png"
+
 
 
 export default function (props) {

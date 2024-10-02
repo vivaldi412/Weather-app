@@ -1,5 +1,5 @@
 import React from "react";
-import { supabase } from "../DataBaseConfiguration"
+import { supabase } from "../components/DataBaseConfiguration"
 import { WeatherContext } from "./WeatherContext";
 import WMO from "../assest/WMO/WMO-code-current.json"
 

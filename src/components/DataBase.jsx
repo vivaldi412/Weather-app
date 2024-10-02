@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react"
-import { supabase } from "../github/workflows/DataBaseConfiguration"
+import { supabase } from "../components/DataBaseConfiguration"
 import { nanoid } from "nanoid"
 
 
