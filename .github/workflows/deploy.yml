@@ -33,7 +33,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Secret
-        uses: secrets/actions
+        uses: secrets/actions/VITE_SUPA_BASE_KEY
         with:
           VITE_SUPA_BASE_KEY: ${{ secrets.VITE_SUPA_BASE_KEY }}
       - name: Checkout
