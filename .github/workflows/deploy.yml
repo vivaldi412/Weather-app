@@ -32,6 +32,10 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
+      - name: Secret
+        uses: secrets/actions
+        with:
+          VITE_SUPA_BASE_KEY: ${{ secrets.VITE_SUPA_BASE_KEY }}
       - name: Checkout
         uses: actions/checkout@v4
       - name: Set up Node
