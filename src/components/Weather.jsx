@@ -5,8 +5,8 @@ export default function Weather(props) {
     const [apiData, setApiData] = useState()
     const [airApi, setAirApi] = useState()
 
-    const latitude = props.ob.data.lat
-    const longitude = props.ob.data.lon
+    const latitude = props.ob.data.latitude
+    const longitude = props.ob.data.longitude
 
 
     async function fetchApi() {
