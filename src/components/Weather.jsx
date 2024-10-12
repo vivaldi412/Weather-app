@@ -1,12 +1,33 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { WeatherContext } from "./WeatherContext";
+import { flushSync } from 'react-dom';
+
 
 export default function Weather(props) {
     const [apiData, setApiData] = useState()
     const [airApi, setAirApi] = useState()
+    const [latitude, setLatitude] = useState(() => props.ob.data.latitude)
+    const [longitude, setLongitude] = useState(() => props.ob.data.longitude)
+    const [jesus, setJesus] = useState(null)
+    const [refresh, setRefresh] = useState(null)
+    const someRef = React.useRef(null)
+    const timeoutRef = React.useRef(null)
+    // const [state, dispatch] = useReducer(reducer, { jesus=null });
 
-    const latitude = props.ob.data.latitude
-    const longitude = props.ob.data.longitude
+
+    // const jesusRef = useRef(props.jesus)
+
+    // props.ob.data.latitude
+    // props.ob.data.longitude
+    // flushSync(() => {
+    function searchBarPass(n) {
+        // if (n !== undefined && n !== null) {
+        setJesus(n)
+        // }
+    }
+
+    // });
+
 
 
     async function fetchApi() {
@@ -39,23 +60,46 @@ export default function Weather(props) {
 
     const loading = props === undefined ? <div className="loading"></div> : null
     useEffect(() => {
+        if (jesus !== undefined && jesus !== null) {
+            setLatitude(jesus[0])
+            setLongitude(jesus[1])
+            props.refresh(jesus)
+            // setLatitude(someRef.current[0])
+            // setLongitude(someRef.current[1])
+            // props.refresh(someRef.current)
+        } else {
+            setLatitude(props.ob.data.latitude)
+            setLongitude(props.ob.data.longitude)
+        }
         fetchApi();
         fetchAirApi();
-        setTimeout(() => {
-            fetchApi();
-            fetchAirApi();
-        }, 900000);
-    }, [])
-
-
+        // setTimeout(() => {
+        //     setRefresh(Math.random())
+        //     fetchApi();
+        //     fetchAirApi();
+        //     console.log("Delayed for 1 second.");
+        //     setRefresh(Math.random())
+        // }, 1000);
+    }, [jesus])
 
 
     let dataPass;
     if (apiData !== undefined) {
+        if (jesus === null || jesus === undefined) {
+            dataPass = {
+                ip: props.ob.data,
+                loc: apiData,
+                air: airApi,
+                info: null,
+                searchBarPass: searchBarPass
+            };
+        }
         dataPass = {
             ip: props.ob.data,
             loc: apiData,
-            air: airApi
+            air: airApi,
+            info: jesus,
+            searchBarPass: searchBarPass
         };
     }
 

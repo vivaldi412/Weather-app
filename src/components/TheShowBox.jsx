@@ -5,6 +5,8 @@ import Today from "./Today";
 import Hourly from "./Hourly";
 import Info from "./Info";
 
+
+
 import { WeatherContext } from "./WeatherContext";
 
 
@@ -19,12 +21,13 @@ export default function (props) {
         }
         return shit
     }
+    // style={{ width: '-webkit-fill-available' }}
     // <img src={logo} className="logo" />
     function dufuck() {
         if (data) {
             return (
                 <div className="main-box">
-                    <div className="ff" id="ff1" style={{ width: '-webkit-fill-available' }}> <Info /></div>
+                    <div className="ff" id="ff1" > <Info /></div>
                     <div className="ff" id="ff3" > <Current /> </div>
                     <div className="ff" id="ff5" > <Daily /> </div>
                     <div className="ff" id="ff7" > <Today /> </div>
