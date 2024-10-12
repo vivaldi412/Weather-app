@@ -307,7 +307,7 @@ export default function SearchBar() {
                 </div>
             </form>
 
-            {btn ? <div className="arman-overlay" style={{ display: "block", backgroundColor: "#00000050" }} onClick={infoBtn}></div> : <div className="arman-overlay"></div>}
+            {btn ? <div className="arman-overlay" style={{ display: "block", backgroundColor: "#00000060" }} onClick={infoBtn}></div> : <div className="arman-overlay"></div>}
             {btn ? <div style={{ opacity: "100%", translate: "33% -5%", width: "500px", height: "500px", fontSize: "small" }} className="arman-page" onClick={infoBtn}>
                 <h1>arman</h1>
                 <h1>Weather and Air data: Open-Meteo</h1>
