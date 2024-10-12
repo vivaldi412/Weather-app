@@ -28,12 +28,12 @@ export default function SearchBar() {
         let temp = []
         for (let i = 0; i < 23; i++) {
             temp.push(
-                <div className="option" id={i} key={nanoid()}  ><p className="option-p" id={'p' + i} onMouseDown={searchP} onClick={searchP}  ></p></div>
+                <div className="option" id={i} key={nanoid()}  ><p className="option-p" id={'p' + i} onMouseDown={searchP}   ></p></div>
             )
         }
         return temp
     })
-
+    // onClick={searchP}
 
     const temp = [[]]
     function add() {
@@ -63,16 +63,16 @@ export default function SearchBar() {
         event.preventDefault()
         setClickedOn(event.target.value)
         someRef.current = ifTrueRef.current
-        fuckingTemp = someRef.current
+        witchRef.current = null
+        movenRef.current = 0
+        ifTrueRef.current = null
+        event.target.blur()
+        deleteOption()
+        setCity("")
         setTimeout(() => {
             setClickedOn(null)
             console.log("Delayed for 5 second.");
         }, 300);
-        witchRef.current = null
-        movenRef.current = 0
-        ifTrueRef.current = null
-        deleteOption(event)
-        setCity("")
     }
 
 
