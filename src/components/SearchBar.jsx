@@ -62,6 +62,12 @@ export default function SearchBar() {
     function searchP(event) {
         event.preventDefault()
         setClickedOn(event.target.value)
+        someRef.current = ifTrueRef.current
+        fuckingTemp = someRef.current
+        setTimeout(() => {
+            setClickedOn(null)
+            console.log("Delayed for 5 second.");
+        }, 300);
         witchRef.current = null
         movenRef.current = 0
         ifTrueRef.current = null
