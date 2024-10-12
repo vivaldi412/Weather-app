@@ -318,9 +318,9 @@ export default function SearchBar() {
 
             <button className="arman-info" onClick={infoBtn}>Info</button>
             <button className="currentLoc-btn" onClick={() => {
-                setClickedOn(["35.69439", "51.42151", "Arman", "Arman", "Arman"])
+                setClickedOn([data?.ip.latitude, data?.ip.longitude, data?.ip.city, data?.ip.countryCode, data?.ip.continentCode])
                 setTimeout(() => {
-                    setClickedOn([data?.ip.latitude, data?.ip.longitude, data?.ip.city, data?.ip.countryCode, data?.ip.continentCode])
+                    setClickedOn(["35.69439", "51.42151", data?.ip.city, data?.ip.countryCode, data?.ip.continentCode])
                     console.log("delayed CLICK ");
 
                 }, 300);
