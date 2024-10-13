@@ -39,6 +39,22 @@ export default function SearchBar() {
     function add() {
         temp.push([])
     }
+    function thatShitImade() {
+        let temp = []
+        for (let i = 0; i < 50; i++) {
+            if (i % 2 === 0) {
+                temp.push(
+                    (<div style={{ width: "15px", height: "6px", backgroundColor: "#65ebe7", animationDelay: `${(i * 200) + 50}ms` }} className="arman-page-border-in" key={nanoid()}></div>)
+                )
+            }
+            if (i % 2 !== 0) {
+                temp.push(
+                    (<div style={{ width: "15px", height: "6px", animationDelay: `${(i * 200) + 50}ms` }} className="arman-page-border-in" key={nanoid()} ></div>)
+                )
+            }
+        }
+        return temp
+    }
 
     React.useEffect(() => {
         function omg() {
@@ -307,14 +323,24 @@ export default function SearchBar() {
                 </div>
             </form>
 
+
             {btn ? <div className="arman-overlay" style={{ display: "block", backgroundColor: "#00000060" }} onClick={infoBtn}></div> : <div className="arman-overlay"></div>}
             {btn ? <div style={{ opacity: "100%", translate: "33% -5%", width: "500px", height: "500px", fontSize: "small" }} className="arman-page" onClick={infoBtn}>
-                <h1>arman</h1>
-                <h1>Weather and Air data: Open-Meteo</h1>
-                <h1>using SupaBase as database</h1>
-                <h1>all SVGs heavily edited by me</h1>
+                {/* <div style={{ width: "15px", height: "6px" }} className="arman-page-border-in"></div> */}
+                {thatShitImade()}
+                <a href="https://github.com/vivaldi412" target="_blank" rel="nofollow noopener noreferrer">
+                    <h1 className="arman-text" id="aLink" >Arman</h1></a>
+                <h1 className="arman-text">Weather and Air data: Open-Meteo</h1>
+                <h1 className="arman-text">using SupaBase as database</h1>
+                <h1 className="arman-text">all SVGs heavily edited by me</h1>
             </div> : <div className="arman-page"></div>}
+            {/* {btn ? <div style={{ opacity: "100%", translate: "0 0px" }} className="arman-page-border" >
 
+            </div> : <div className="arman-page-border">
+                <div className="arman-page-border-in"></div></div>} */}
+
+            {/* width: "0px", height: "0px", border: "3px solid #eb6565"  */}
+            {/* onClick={infoBtn} */}
 
             <button className="arman-info" onClick={infoBtn}>Info</button>
             <button className="currentLoc-btn" onClick={() => {

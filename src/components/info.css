@@ -215,12 +215,12 @@
   font-size: 0.8rem;
 }
 
-.currentLoc-btn:focus,
-.arman-info:focus {
-  opacity: 100%;
-  /* box-shadow: #d6d6e7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
+/* .currentLoc-btn:focus, */
+/* .arman-info:focus { */
+/* opacity: 100%; */
+/* box-shadow: #d6d6e7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
     rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset; */
-}
+/* } */
 
 .currentLoc-btn:hover,
 .arman-info:hover {
@@ -242,27 +242,89 @@
   left: -45px;
   top: -45px;
   display: none;
-  width: 1920px;
-  height: 1080px;
+  /* width: 1920px;
+  height: 1080px; */
+  width: 100vw;
+  height: 100vw;
 }
 .arman-page {
+  clip-path: margin-box;
   display: flex;
   align-content: center;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   position: absolute;
-  overflow: hidden;
+  /* overflow: hidden; */
   font-size: 0px;
   opacity: 0%;
   top: 23px;
   left: 181px;
   width: 20px;
   height: 20px;
-  border: 6px solid #64b6b7;
+  /* border: 6px solid #64b6b7; */
+  border: 6px solid transparent;
+  /* border: 6px solid #3a86ff; */
   border-radius: 6px;
   background-color: #216566ce;
   /* transition: opacity 300ms; */
-  transition: all 300ms;
+  /* transition: all 400ms ease-out; */
+  transition: all 500ms cubic-bezier(0.18, 0.89, 0.32, 1.28);
   z-index: 2;
+}
+.arman-page-border {
+  position: absolute;
+  overflow: hidden;
+  opacity: 0%;
+  top: -2.7px;
+  left: 350px;
+  width: 512px;
+  height: 512px;
+  border-radius: 6px;
+  z-index: 2;
+}
+.arman-page-border-in {
+  /* opacity: 0%; */
+  border-radius: 3px;
+  position: absolute;
+  overflow: hidden;
+  top: -6px;
+  left: -5.6px;
+  background-color: #fb5607;
+  offset-path: path(
+    "M -1 3 L 509 3 Q 509 3 509 18 M 509 18 L 509 509 Q 494 509 494 509 M 494 509 L 3 509 Q 3 509 3 494 M 3 494 L 3 18 Q -1 18 2 6"
+  );
+  transition: all 1s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+  animation: armanBorder 10s infinite linear;
+  /* animation-delay: 100ms; */
+}
+.arman-text {
+  background-image: linear-gradient(to right, #65ebe7 100%, #65ebe7 100%);
+  background-size: 100% 0%;
+  background-position: -1px 25px;
+  background-repeat: no-repeat;
+  padding-left: 1px;
+  transition: background-size 1s ease 30ms;
+  cursor: none;
+}
+a,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+  text-decoration: none;
+}
+#aLink {
+  cursor: pointer;
+}
+
+.arman-text:hover {
+  background-size: 100% 20%;
+}
+@keyframes armanBorder {
+  from {
+    offset-distance: 0%;
+  }
+  to {
+    offset-distance: 100%;
+  }
 }
