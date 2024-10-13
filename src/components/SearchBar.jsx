@@ -41,15 +41,15 @@ export default function SearchBar() {
     }
     function thatShitImade() {
         let temp = []
-        for (let i = 0; i < 50; i++) {
+        for (let i = 0; i < 100; i++) {
             if (i % 2 === 0) {
                 temp.push(
-                    (<div style={{ width: "15px", height: "6px", backgroundColor: "#65ebe7", animationDelay: `${(i * 200) + 50}ms` }} className="arman-page-border-in" key={nanoid()}></div>)
+                    (<div style={{ width: "15px", height: "6px", backgroundColor: "#160f29", animationDelay: `${(i * 100)}ms` }} className="arman-page-border-in" key={nanoid()}></div>)
                 )
             }
             if (i % 2 !== 0) {
                 temp.push(
-                    (<div style={{ width: "15px", height: "6px", animationDelay: `${(i * 200) + 50}ms` }} className="arman-page-border-in" key={nanoid()} ></div>)
+                    (<div style={{ width: "15px", height: "6px", animationDelay: `${(i * 100)}ms` }} className="arman-page-border-in" key={nanoid()} ></div>)
                 )
             }
         }
