@@ -319,7 +319,7 @@ a:visited {
 }
 
 .arman-text:hover {
-  background-size: 100% 20%;
+  background-size: 100% 15%;
 }
 @keyframes armanBorder {
   from {
