@@ -263,8 +263,8 @@
   width: 20px;
   height: 20px;
   /* border: 6px solid #64b6b7; */
-  border: 6px solid transparent;
-  /* border: 6px solid #3a86ff; */
+  /* border: 6px solid transparent; */
+  border: 6px solid #0000003d;
   border-radius: 6px;
   background-color: #216566ce;
   /* transition: opacity 300ms; */
@@ -272,16 +272,37 @@
   transition: all 500ms cubic-bezier(0.18, 0.89, 0.32, 1.28);
   z-index: 2;
 }
-.arman-page-border {
+.arman-page-2 {
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
   position: absolute;
-  overflow: hidden;
-  opacity: 0%;
-  top: -2.7px;
-  left: 350px;
-  width: 512px;
-  height: 512px;
-  border-radius: 6px;
-  z-index: 2;
+  /* overflow: hidden; */
+  /* font-size: 0px; */
+  width: 400px;
+  height: 400px;
+  background: linear-gradient(to right, #f5f5f5 4px, transparent 4px) 0 0,
+    linear-gradient(to bottom, #f5f5f5 4px, transparent 4px) 0 0,
+    linear-gradient(to left, #f5f5f5 4px, transparent 4px) 100% 0,
+    linear-gradient(to bottom, #f5f5f5 4px, transparent 4px) 100% 0,
+    linear-gradient(to left, #f5f5f5 4px, transparent 4px) 100% 100%,
+    linear-gradient(to top, #f5f5f5 4px, transparent 4px) 100% 100%,
+    linear-gradient(to right, #f5f5f5 4px, transparent 4px) 0 100%,
+    linear-gradient(to top, #f5f5f5 4px, transparent 4px) 0 100%;
+  /* linear-gradient(to bottom, #f5f5f5 2px, transparent 2px) 0 0,
+    linear-gradient(to right, #f5f5f5 2px, transparent 2px) 0 100%,
+    linear-gradient(to left, #f5f5f5 2px, transparent 2px) 100% 0,
+    linear-gradient(to top, #f5f5f5 2px, transparent 2px) 100% 100%; */
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  /* border: 6px solid #64b6b7; */
+  /* border: 6px solid transparent; */
+  /* background-color: transparent; */
+  /* transition: opacity 300ms; */
+  /* transition: all 400ms ease-out; */
+  /* transition: all 500ms cubic-bezier(0.18, 0.89, 0.32, 1.28); */
 }
 .arman-page-border-in {
   opacity: 50%;
@@ -291,22 +312,143 @@
   top: -6px;
   left: -5.6px;
   /* background-color: #fb5607; */
-  background-color: #414833;
+  background-color: #748d43;
   offset-path: path(
-    "M -1 3 L 509 3 Q 509 3 509 18 M 509 18 L 509 509 Q 494 509 494 509 M 494 509 L 3 509 Q 3 509 3 494 M 3 494 L 3 18 Q -1 18 2 6"
+    "M -8 3 L 509 3 Q 509 3 509 18 M 509 18 L 509 509 Q 494 509 494 509 M 494 509 L 3 509 Q 3 509 3 494 M 3 494 L 3 5 Q 3 18 3 -5"
   );
   transition: all 1s cubic-bezier(0.18, 0.89, 0.32, 1.28);
-  animation: armanBorder 10s infinite linear;
+  animation: armanBorder 15s infinite alternate;
   /* animation-delay: 100ms; */
 }
 .arman-text {
-  background-image: linear-gradient(to right, #65ebe7 100%, #65ebe7 100%);
+  /* position: relative; */
+  padding: 14px 25px;
+  font-size: 1.3rem;
+  margin: 0px 57px;
+  border-top: 4px solid #f5f5f500;
+  border-left: 4px solid #f5f5f500;
+  border-bottom: 4px solid #f5f5f500;
+  border-right: 4px solid #f5f5f500;
+  /* outline: 3px solid red; */
+  /* background-image: linear-gradient(to right, #65ebe7 100%, #65ebe7 100%);
   background-size: 100% 0%;
   background-position: -1px 25px;
   background-repeat: no-repeat;
-  padding-left: 1px;
-  transition: background-size 1s ease 30ms;
-  cursor: none;
+  padding-left: 1px; */
+  /* transition: background-size 1s ease 30ms; */
+  /* cursor: none; */
+}
+
+#txt1::before {
+  border-radius: 6px;
+  top: 93px;
+  border-top: 4px solid #f5f5f5;
+  border-right: 0px solid #f5f5f5;
+  left: 57px;
+  position: absolute;
+  content: "";
+  /* width: 282px;
+  height: 78xpx; */
+  width: 0px;
+  height: 0px;
+  transition: width 1s, height 1s 1s, border-right-width;
+  /* transition-behavior: allow-discrete; */
+  /* transition-property: width, height; */
+  transition-timing-function: ease;
+  /* background-color: #36395a;*/
+}
+#txt1::after {
+  border-radius: 6px;
+  top: 95px;
+  border-bottom: 0px solid #f5f5f5;
+  border-left: 4px solid #f5f5f5;
+  left: 57px;
+  position: absolute;
+  content: "";
+  /* width: 282px;
+  height: 78px; */
+  width: 0px;
+  height: 0px;
+  transition: width 1s 1s, height 1s, border-bottom-width;
+}
+
+#txt2::before {
+  border-radius: 6px;
+  top: 199px;
+  border-top: 4px solid #f5f5f5;
+  border-right: 0px solid #f5f5f5;
+  left: 57px;
+  position: absolute;
+  content: "";
+  /* width: 282px;
+  height: 78xpx; */
+  width: 0px;
+  height: 0px;
+  transition: width 1s, height 1s 1s, border-right-width;
+  /* transition-behavior: allow-discrete; */
+  /* transition-property: width, height; */
+  transition-timing-function: ease;
+  /* background-color: #36395a;*/
+}
+#txt2::after {
+  border-radius: 6px;
+  top: 201px;
+  border-bottom: 0px solid #f5f5f5;
+  border-left: 4px solid #f5f5f5;
+  left: 57px;
+  position: absolute;
+  content: "";
+  /* width: 282px;
+  height: 78px; */
+  width: 0px;
+  height: 0px;
+  transition: width 1s 1s, height 1s, border-bottom-width;
+}
+#txt3::before {
+  border-radius: 6px;
+  top: 307px;
+  border-top: 4px solid #f5f5f5;
+  border-right: 0px solid #f5f5f5;
+  left: 57px;
+  position: absolute;
+  content: "";
+  /* width: 282px;
+  height: 78xpx; */
+  width: 0px;
+  height: 0px;
+  transition: width 1s, height 1s 1s, border-right-width;
+  /* transition-behavior: allow-discrete; */
+  /* transition-property: width, height; */
+  transition-timing-function: ease;
+  /* background-color: #36395a;*/
+}
+#txt3::after {
+  border-radius: 6px;
+  top: 307px;
+  border-bottom: 0px solid #f5f5f5;
+  border-left: 4px solid #f5f5f5;
+  left: 57px;
+  position: absolute;
+  content: "";
+  /* width: 282px;
+  height: 78px; */
+  width: 0px;
+  height: 0px;
+  transition: width 1s 1s, height 1s, border-bottom-width;
+}
+#txt1:hover::before,
+#txt2:hover::before,
+#txt3:hover::before {
+  height: 78px;
+  width: 282px;
+  border-right-width: 4px;
+}
+#txt1:hover::after,
+#txt2:hover::after,
+#txt3:hover::after {
+  height: 78px;
+  width: 282px;
+  border-bottom-width: 4px;
 }
 a,
 a:visited {
@@ -317,15 +459,17 @@ a:visited {
 #aLink {
   cursor: pointer;
 }
-
-.arman-text:hover {
-  background-size: 100% 15%;
-}
 @keyframes armanBorder {
-  from {
+  0% {
     offset-distance: 0%;
   }
-  to {
+  25% {
+    offset-distance: 100%;
+  }
+  50% {
+    offset-distance: 0%;
+  }
+  100% {
     offset-distance: 100%;
   }
 }

@@ -41,7 +41,7 @@ export default function SearchBar() {
     }
     function thatShitImade() {
         let temp = []
-        for (let i = 0; i < 100; i++) {
+        for (let i = 0; i < 130; i++) {
             if (i % 2 === 0) {
                 temp.push(
                     (<div style={{ width: "15px", height: "6px", backgroundColor: "#160f29", animationDelay: `${(i * 100)}ms` }} className="arman-page-border-in" key={nanoid()}></div>)
@@ -91,37 +91,6 @@ export default function SearchBar() {
         }, 300);
     }
 
-
-
-    // function search(event) {
-    //     event.preventDefault()
-    //     let found = null
-    //     let nn = null
-    //     for (let i = 0; i < matchRef.current[cityRef.current.length - 1].length; i++) {
-    //         if (cityRef.current.length === matchRef.current[cityRef.current.length - 1][i].name.length) {
-    //             for (let j = 0; j < cityRef.current.length; j++) {
-    //                 if (cityRef.current[j] === matchRef.current[cityRef.current.length - 1][i].name[j] || cityRefUp.current[j] === matchRef.current[cityRef.current.length - 1][i].name[j]) {
-    //                     found = true
-    //                     nn = i
-    //                 }
-    //                 else {
-    //                     found = false
-    //                     break;
-    //                 }
-    //             }
-    //         }
-    //     }
-    //     if (found === true) {
-    //         setClickedOn(document.getElementById("p" + String(nn)).value)
-    //         event.target.blur()
-    //         deleteOption()
-    //         setCity("")
-    //     }
-    //     else if (found === false || found === null) {
-    //         alert("City not Found")
-    //     }
-    //     movenRef.current = 0
-    // }
 
     function input(event) {
         event.preventDefault()
@@ -328,17 +297,18 @@ export default function SearchBar() {
             {btn ? <div style={{ opacity: "100%", translate: "33% -5%", width: "500px", height: "500px", fontSize: "small" }} className="arman-page" onClick={infoBtn}>
                 {/* <div style={{ width: "15px", height: "6px" }} className="arman-page-border-in"></div> */}
                 {thatShitImade()}
-                <a href="https://github.com/vivaldi412" target="_blank" rel="nofollow noopener noreferrer">
-                    <h1 className="arman-text" id="aLink" >Arman</h1></a>
-                <h1 className="arman-text">Weather and Air data: Open-Meteo</h1>
-                <h1 className="arman-text">using SupaBase as database</h1>
-                <h1 className="arman-text">all SVGs heavily edited by me</h1>
+                <div className="arman-page-2">
+                    <a href="https://github.com/vivaldi412" target="_blank" rel="nofollow noopener noreferrer">
+                        <h1 className="arman-text" id="aLink" >Arman</h1></a>
+                    <h1 className="arman-text" id="txt1">Weather and Air data: Open-Meteo</h1>
+                    <h1 className="arman-text" id="txt2">using SupaBase as database</h1>
+                    <h1 className="arman-text" id="txt3">all SVGs heavily edited by me</h1>
+                </div>
             </div> : <div className="arman-page"></div>}
-            {/* {btn ? <div style={{ opacity: "100%", translate: "0 0px" }} className="arman-page-border" >
 
+            {/* {btn ? <div style={{ opacity: "100%", translate: "0 0px" }} className="arman-page-border" >
             </div> : <div className="arman-page-border">
                 <div className="arman-page-border-in"></div></div>} */}
-
             {/* width: "0px", height: "0px", border: "3px solid #eb6565"  */}
             {/* onClick={infoBtn} */}
 
