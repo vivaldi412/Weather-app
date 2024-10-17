@@ -24,6 +24,7 @@ export default function SearchBar() {
     const someRef = React.useRef(null)
     const timeoutRef = React.useRef(null)
     const [btn, setBtn] = React.useState(false)
+    const [btnA, setBtnA] = React.useState(false)
     const [optionTempState, setOptionTempState] = React.useState(() => {
         let temp = []
         for (let i = 0; i < 23; i++) {
@@ -264,7 +265,13 @@ export default function SearchBar() {
             setCity("")
         }
     }
+    // let svgBegin = "a"
+    // function svgfuc() {
+    //     svgBegin = "0s"
+    // }
+    // function mouseOverS() {
 
+    // }
 
     function infoBtn() {
         setBtn(perv => !perv)
@@ -293,18 +300,60 @@ export default function SearchBar() {
             </form>
 
 
+
+            {/* <button id="btnmine" onClick={kirekhar}>aaa</button> */}
+            {/* <svg xmlns="http://www.w3.org/2000/svg" width="286" height="50" viewBox="0 0 286 50" fill="none" id="svgbox">
+                <svg id="srect1">
+                    <rect id="rect1" width={0} height={3} fill="red" />
+                    <svg id="srect2">
+                        <rect id="rect2" width={3} height={0} fill="red" transform="translate(283,0)" />
+                    </svg>
+                </svg>
+
+            </svg> */}
+            {/* 
+            <div className="lineBox">
+                <div className="line1"></div>
+                <div className="line2"></div>
+                <div className="line3"></div>
+                <div className="line4"></div>
+            </div> */}
+
+
+
+
+
             {btn ? <div className="arman-overlay" style={{ display: "block", backgroundColor: "#00000060" }} onClick={infoBtn}></div> : <div className="arman-overlay"></div>}
             {btn ? <div style={{ opacity: "100%", translate: "33% -5%", width: "500px", height: "500px", fontSize: "small" }} className="arman-page" onClick={infoBtn}>
                 {/* <div style={{ width: "15px", height: "6px" }} className="arman-page-border-in"></div> */}
-                {thatShitImade()}
+                {/* {thatShitImade()} */}
                 <div className="arman-page-2">
+                    <div className="lineBox">
+                        <div className="line1"></div>
+                        <div className="line2"></div>
+                        <div className="line3"></div>
+                        <div className="line4"></div>
+                    </div>
+                    <div className="lineBox" id="linebox2">
+                        <div className="line1"></div>
+                        <div className="line2"></div>
+                        <div className="line3"></div>
+                        <div className="line4"></div>
+                    </div>
+                    <div className="lineBox" id="linebox3">
+                        <div className="line1"></div>
+                        <div className="line2"></div>
+                        <div className="line3"></div>
+                        <div className="line4"></div>
+                    </div>
                     <a href="https://github.com/vivaldi412" target="_blank" rel="nofollow noopener noreferrer">
                         <h1 className="arman-text" id="aLink" >Arman</h1></a>
                     <h1 className="arman-text" id="txt1">Weather and Air data: Open-Meteo</h1>
                     <h1 className="arman-text" id="txt2">using SupaBase as database</h1>
                     <h1 className="arman-text" id="txt3">all SVGs heavily edited by me</h1>
                 </div>
-            </div> : <div className="arman-page"></div>}
+            </div> : <div className="arman-page"></div>
+            }
 
             {/* {btn ? <div style={{ opacity: "100%", translate: "0 0px" }} className="arman-page-border" >
             </div> : <div className="arman-page-border">
@@ -322,7 +371,7 @@ export default function SearchBar() {
                 }, 300);
                 console.log("btn clicked")
             }} >Current Location(ip)</button>
-        </div>
+        </div >
     )
 }
 // onClick={() => setClickedOn(null)}
