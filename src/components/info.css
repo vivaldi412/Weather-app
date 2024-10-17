@@ -339,7 +339,7 @@
   /* cursor: none; */
 }
 
-#txt1::before {
+/* #txt1::before {
   border-radius: 6px;
   top: 93px;
   border-top: 4px solid #f5f5f5;
@@ -347,15 +347,15 @@
   left: 57px;
   position: absolute;
   content: "";
-  /* width: 282px;
-  height: 78xpx; */
+  width: 282px;
+  height: 78xpx;
   width: 0px;
   height: 0px;
   transition: width 1s, height 1s 1s, border-right-width;
-  /* transition-behavior: allow-discrete; */
-  /* transition-property: width, height; */
+  transition-behavior: allow-discrete;
+  transition-property: width, height;
   transition-timing-function: ease;
-  /* background-color: #36395a;*/
+  background-color: #36395a;
 }
 #txt1::after {
   border-radius: 6px;
@@ -365,8 +365,8 @@
   left: 57px;
   position: absolute;
   content: "";
-  /* width: 282px;
-  height: 78px; */
+  width: 282px;
+  height: 78px;
   width: 0px;
   height: 0px;
   transition: width 1s 1s, height 1s, border-bottom-width;
@@ -380,15 +380,15 @@
   left: 57px;
   position: absolute;
   content: "";
-  /* width: 282px;
-  height: 78xpx; */
+  width: 282px;
+  height: 78xpx;
   width: 0px;
   height: 0px;
   transition: width 1s, height 1s 1s, border-right-width;
-  /* transition-behavior: allow-discrete; */
-  /* transition-property: width, height; */
+  transition-behavior: allow-discrete;
+  transition-property: width, height;
   transition-timing-function: ease;
-  /* background-color: #36395a;*/
+  background-color: #36395a;
 }
 #txt2::after {
   border-radius: 6px;
@@ -398,8 +398,8 @@
   left: 57px;
   position: absolute;
   content: "";
-  /* width: 282px;
-  height: 78px; */
+  width: 282px;
+  height: 78px;
   width: 0px;
   height: 0px;
   transition: width 1s 1s, height 1s, border-bottom-width;
@@ -412,15 +412,15 @@
   left: 57px;
   position: absolute;
   content: "";
-  /* width: 282px;
-  height: 78xpx; */
+  width: 282px;
+  height: 78xpx;
   width: 0px;
   height: 0px;
   transition: width 1s, height 1s 1s, border-right-width;
-  /* transition-behavior: allow-discrete; */
-  /* transition-property: width, height; */
+  transition-behavior: allow-discrete;
+  transition-property: width, height;
   transition-timing-function: ease;
-  /* background-color: #36395a;*/
+  background-color: #36395a;
 }
 #txt3::after {
   border-radius: 6px;
@@ -430,8 +430,8 @@
   left: 57px;
   position: absolute;
   content: "";
-  /* width: 282px;
-  height: 78px; */
+  width: 282px;
+  height: 78px;
   width: 0px;
   height: 0px;
   transition: width 1s 1s, height 1s, border-bottom-width;
@@ -449,7 +449,7 @@
   height: 78px;
   width: 282px;
   border-bottom-width: 4px;
-}
+} */
 a,
 a:visited {
   text-decoration: none;
@@ -509,6 +509,7 @@ a:visited {
 
 .lineBox {
   position: absolute;
+  clip-path: inset(1px);
   top: 92px;
   left: 56px;
   width: 287px;
