@@ -326,7 +326,7 @@ export default function SearchBar() {
             {btn ? <div className="arman-overlay" style={{ display: "block", backgroundColor: "#00000060" }} onClick={infoBtn}></div> : <div className="arman-overlay"></div>}
             {btn ? <div style={{ opacity: "100%", translate: "33% -5%", width: "500px", height: "500px", fontSize: "small" }} className="arman-page" onClick={infoBtn}>
                 {/* <div style={{ width: "15px", height: "6px" }} className="arman-page-border-in"></div> */}
-                {/* {thatShitImade()} */}
+                {thatShitImade()}
                 <div className="arman-page-2">
                     <div className="lineBox">
                         <div className="line1"></div>
