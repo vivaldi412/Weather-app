@@ -8,7 +8,7 @@ import { getCountryCode, getCountryData, getCountryDataList, getEmojiFlag } from
 import icon from "../assest/googleIcon/search.svg"
 import { nanoid } from 'nanoid'
 import SvgLineBorder from "../assest/SvgLineBorder";
-
+import Arman from "../assest/Arman";
 
 
 export default function SearchBar() {
@@ -231,11 +231,7 @@ export default function SearchBar() {
                     setClickedOn(null)
                     console.log("Delayed for 5 second.");
                 }, 500);
-                // setTimeout(() => {
-                //     setClickedOn(fuckingTemp)
-                //     console.log("Delayed for 9 second.");
-                //     setBtn(perv => !perv)
-                // }, 9000);
+
 
             }
             else if (witchRef.current === null && ifTrueRef.current === null) {
@@ -249,15 +245,11 @@ export default function SearchBar() {
                     setClickedOn(null)
                     console.log("Delayed for 5 second.");
                 }, 300);
-                // setTimeout(() => {
-                //     setBtn(perv => !perv)
-                //     setClickedOn(fuckingTemp)
-                //     console.log("Delayed for 9 second.");
-                // }, 9000);
+
 
                 found = false
             }
-            // console.log(document.getElementById('p' + String(witchRef.current)).value)
+
             witchRef.current = null
             movenRef.current = 0
             ifTrueRef.current = null
@@ -266,13 +258,7 @@ export default function SearchBar() {
             setCity("")
         }
     }
-    // let svgBegin = "a"
-    // function svgfuc() {
-    //     svgBegin = "0s"
-    // }
-    // function mouseOverS() {
 
-    // }
 
     function infoBtn() {
         setBtn(perv => !perv)
@@ -302,23 +288,7 @@ export default function SearchBar() {
 
 
 
-            {/* <button id="btnmine" onClick={kirekhar}>aaa</button> */}
-            {/* <svg xmlns="http://www.w3.org/2000/svg" width="286" height="50" viewBox="0 0 286 50" fill="none" id="svgbox">
-                <svg id="srect1">
-                    <rect id="rect1" width={0} height={3} fill="red" />
-                    <svg id="srect2">
-                        <rect id="rect2" width={3} height={0} fill="red" transform="translate(283,0)" />
-                    </svg>
-                </svg>
 
-            </svg> */}
-            {/* 
-            <div className="lineBox">
-                <div className="line1"></div>
-                <div className="line2"></div>
-                <div className="line3"></div>
-                <div className="line4"></div>
-            </div> */}
 
 
 
@@ -334,33 +304,24 @@ export default function SearchBar() {
                             height={"86"}
                             number={"1"}
                         />
-                        {/* <div className="line1"></div>
-                        <div className="line2"></div>
-                        <div className="line3"></div>
-                        <div className="line4"></div> */}
+
                     </div>
                     <div className="lineBox" id="linebox2">
                         <SvgLineBorder width={"287"}
                             height={"86"}
                             number={"2"}
                         />
-                        {/* <div className="line1"></div>
-                        <div className="line2"></div>
-                        <div className="line3"></div>
-                        <div className="line4"></div> */}
+
                     </div>
                     <div className="lineBox" id="linebox3">
                         <SvgLineBorder width={"287"}
                             height={"86"}
                             number={"3"}
                         />
-                        {/* <div className="line1"></div>
-                        <div className="line2"></div>
-                        <div className="line3"></div>
-                        <div className="line4"></div> */}
+
                     </div>
-                    <a href="https://github.com/vivaldi412" target="_blank" rel="nofollow noopener noreferrer">
-                        <h1 className="arman-text" id="aLink" >Arman</h1></a>
+
+                    <Arman />
                     <h1 className="arman-text" id="txt1">Weather and Air data: Open-Meteo</h1>
                     <h1 className="arman-text" id="txt2">using SupaBase as database</h1>
                     <h1 className="arman-text" id="txt3">all SVGs heavily edited by me</h1>
@@ -368,11 +329,7 @@ export default function SearchBar() {
             </div> : <div className="arman-page"></div>
             }
 
-            {/* {btn ? <div style={{ opacity: "100%", translate: "0 0px" }} className="arman-page-border" >
-            </div> : <div className="arman-page-border">
-                <div className="arman-page-border-in"></div></div>} */}
-            {/* width: "0px", height: "0px", border: "3px solid #eb6565"  */}
-            {/* onClick={infoBtn} */}
+
 
             <button className="arman-info" onClick={infoBtn}>Info</button>
             <button className="currentLoc-btn" onClick={() => {
@@ -387,7 +344,7 @@ export default function SearchBar() {
         </div >
     )
 }
-// onClick={() => setClickedOn(null)}
+
 
 
 
