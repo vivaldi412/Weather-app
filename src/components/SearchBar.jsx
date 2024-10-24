@@ -7,6 +7,7 @@ import { continents, countries, languages } from 'countries-list'
 import { getCountryCode, getCountryData, getCountryDataList, getEmojiFlag } from 'countries-list'
 import icon from "../assest/googleIcon/search.svg"
 import { nanoid } from 'nanoid'
+import SvgLineBorder from "../assest/SvgLineBorder";
 
 
 
@@ -329,22 +330,34 @@ export default function SearchBar() {
                 {thatShitImade()}
                 <div className="arman-page-2">
                     <div className="lineBox">
-                        <div className="line1"></div>
+                        <SvgLineBorder width={"287"}
+                            height={"86"}
+                            number={"1"}
+                        />
+                        {/* <div className="line1"></div>
                         <div className="line2"></div>
                         <div className="line3"></div>
-                        <div className="line4"></div>
+                        <div className="line4"></div> */}
                     </div>
                     <div className="lineBox" id="linebox2">
-                        <div className="line1"></div>
+                        <SvgLineBorder width={"287"}
+                            height={"86"}
+                            number={"2"}
+                        />
+                        {/* <div className="line1"></div>
                         <div className="line2"></div>
                         <div className="line3"></div>
-                        <div className="line4"></div>
+                        <div className="line4"></div> */}
                     </div>
                     <div className="lineBox" id="linebox3">
-                        <div className="line1"></div>
+                        <SvgLineBorder width={"287"}
+                            height={"86"}
+                            number={"3"}
+                        />
+                        {/* <div className="line1"></div>
                         <div className="line2"></div>
                         <div className="line3"></div>
-                        <div className="line4"></div>
+                        <div className="line4"></div> */}
                     </div>
                     <a href="https://github.com/vivaldi412" target="_blank" rel="nofollow noopener noreferrer">
                         <h1 className="arman-text" id="aLink" >Arman</h1></a>

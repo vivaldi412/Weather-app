@@ -571,3 +571,7 @@ a:visited {
     height: 100%;
   }
 }
+
+.svgborder {
+  position: absolute;
+}
