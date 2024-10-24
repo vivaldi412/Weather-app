@@ -37,7 +37,7 @@ export default function SvgLineBorder(props) {
     return (
         <div>
             <svg xmlns="http://www.w3.org/2000/svg" width={props.width} height={props.height} viewBox={`0 0 ${props.width} ${props.height}`}
-                fill="none" className="svgborder" onMouseEnter={run2} onMouseLeave={handleMouse2}
+                fill="none" className="svgborder" onPointerEnter={run2} onPointerLeave={handleMouse2}
             >
                 <rect id={`rectborder1${props.number}`} rx={5} width="0" height="7" fill="#f5f5f5" ></rect>
                 <rect id={`rectborder2${props.number}`} rx={5} width="7" height="0" fill="#f5f5f5" ></rect>
